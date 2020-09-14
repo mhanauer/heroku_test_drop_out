@@ -4,3 +4,8 @@ pandas
 numpy 
 xgboost 
 sklearn
+Flask
+Jinja2
+gunicorn
+certifi
+itsdangerous
