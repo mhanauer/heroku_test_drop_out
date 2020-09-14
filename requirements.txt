@@ -4,6 +4,6 @@ pandas
 numpy 
 xgboost 
 scikit-learn
-Flask
+flask
 Jinja2
 gunicorn
