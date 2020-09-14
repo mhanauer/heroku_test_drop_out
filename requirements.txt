@@ -6,3 +6,4 @@ xgboost
 sklearn
 Flask
 Jinja2
+gunicorn
