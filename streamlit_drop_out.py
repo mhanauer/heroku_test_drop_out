@@ -12,7 +12,6 @@ import xgboost as xgb
 from xgboost import XGBClassifier
 from xgboost.sklearn import XGBClassifier
 from sklearn.model_selection import RandomizedSearchCV
-server = app.server
 
 filename = "best_model_9_14_20_3pm.pkl"
 best_model = joblib.load(filename)
