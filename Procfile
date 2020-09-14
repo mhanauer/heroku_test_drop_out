@@ -1,1 +1,1 @@
-web: sh setup.sh && run streamlit_drop_out.py
+web: sh setup.bash && run streamlit_drop_out.py
