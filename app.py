@@ -13,8 +13,11 @@ from xgboost import XGBClassifier
 from xgboost.sklearn import XGBClassifier
 from sklearn.model_selection import RandomizedSearchCV
 
-filename = "best_model_9_14_20_3pm.pkl"
-best_model = joblib.load(filename)
+#filename = "best_model_9_14_20_3pm.pkl"
+#best_model = joblib.load(filename)
+filename = "best_model_9_15_20_3pm.pkl"
+with open('best_model_9_15_20_3pm.pkl', 'rb') as f:
+    best_model = pickle.load(f)
 
 def predict(input_df):
     predictions_df = best_model.predict_proba(input_df)
@@ -26,7 +29,7 @@ def run():
     add_selectbox = st.sidebar.selectbox(
     "How would you like to predict?",
     ("Online", "Batch"))
-    st.title("Insurance Charges Prediction App")
+    st.title("Centerstone's Research Institute Treatment Dropout Predictor")
     if add_selectbox == 'Online':
         #Quarter	Gender	   could be f0, f1
         Quarter = st.number_input('Quarter', min_value=1, max_value=4, value=1)
