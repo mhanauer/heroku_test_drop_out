@@ -2,6 +2,6 @@ streamlit
 joblib
 pandas 
 numpy
-xgboost
+xgboost == 0.90
 scikit-learn
 flask
