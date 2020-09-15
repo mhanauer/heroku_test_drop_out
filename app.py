@@ -13,11 +13,9 @@ from xgboost import XGBClassifier
 from xgboost.sklearn import XGBClassifier
 from sklearn.model_selection import RandomizedSearchCV
 
-#filename = "best_model_9_14_20_3pm.pkl"
-#best_model = joblib.load(filename)
-filename = "best_model_9_15_20_3pm.pkl"
-with open('best_model_9_15_20_3pm.pkl', 'rb') as f:
-    best_model = pickle.load(f)
+filename = "best_model_9_15_20_3pm.joblib"
+best_model = joblib.load(filename)
+
 
 def predict(input_df):
     predictions_df = best_model.predict_proba(input_df)
