@@ -3,5 +3,6 @@ joblib
 pandas 
 numpy
 xgboost
+pickle
 scikit-learn
 flask
