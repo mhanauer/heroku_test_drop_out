@@ -45,7 +45,7 @@ def run():
         if file_upload is not None:
             data = pd.read_csv(file_upload)
             predictions_df = best_model.predict_proba(data)
-            st.write(predictions)
+            st.write(predictions_df)
 
 if __name__ == '__main__':
     run()
