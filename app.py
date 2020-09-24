@@ -161,6 +161,7 @@ def run():
             frames = [ConsumerID, drop_out_risk_level]
             pred_dat = pd.concat(frames, axis = 1)
             st.write(pred_dat)
+    st.set_option('deprecation.showfileUploaderEncoding', False)
 
 if __name__ == '__main__':
     run()
